@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin-top: -5vh;
+            display: flex;
+            align-items: center;
+            margin-left: 37vh;
+        }
+        li {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .ser {
+            margin-left: 70vh;
+        }
+        .cmn {
+            margin-left: 7vh;
+        }
+        #x{
+            border: 3px solid #055240;
+            border-radius: 2px;
+            color: #055240;
+        }
+        .line{
+            margin-top: -7vh;
+            color: #B1B1B1;
+        }
+        .ikea{
+            margin-left: 42vh;
+            margin-top: 1vh;
+        }
+        .h1{
+            color: #2B4C32;
+            margin-left: 15vh;
+            margin-top: 1vh;
+            font-size: 25px; 
+            font-weight: bold;
+            font-family: 'Arial', sans-serif; 
+            text-align: center;
+
+        }
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 400px; 
+    margin-left: 38%;
+}
+.search-box input {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+    color: #999;
+}
+.search-box button {
+    background-color: #007D65; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 0 50px 50px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box i {
+    font-size: 16px;
+}
+
+
+.search-box input, .search-box button {
+    height: 40px;
+}
+.nav{
+    display: flex;
+    margin-left: 57vh;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5vh;
+}
+.drill{
+    margin-left: 10vh;
+
+}
+.truck{
+    margin-left: 7vh;
+    margin-top: -1vh;
+}
+.jadu{
+    margin-left: 7vh;
+    margin-top: -1.3vh;
+}
+.tree{
+    margin-left: 7vh;
+    margin-top: -0.7vh;
+}
+.thor{
+    margin-left: 7vh;
+    margin-top: -0.7vh;
+}
+.bihari{
+    margin-left: 7vh;
+    margin-top: -1vh;
+}
+.fire{
+    margin-left: 6vh;
+    margin-top: -1vh;
+}
+#nav{
+    margin-left: 48vh;
+    margin-top: -1vh;
+    color: #0665A6;
+
+}
+.flec{
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    display: flex;
+    margin-top: -1vh;
+    margin-left:8.2vh;
+    
+}
+.bca{
+    margin-left: 6vh;
+    margin-top: -1vh;
+}
+.bcaa{
+    margin-left: 7vh;
+    margin-top: -1vh;
+}
+.bcab{
+    margin-left: 7vh;
+    margin-top: -1vh;
+}
+.bcac{
+    margin-left: 4vh;
+    margin-top: -1vh;
+}
+.bcad{
+    margin-left: 6vh;
+    margin-top: -1vh;
+}
+.lina{
+    margin-left: 49vh;
+    color: #DADCDB;
+}
+.button-container {
+    margin-left: 53vh;
+    margin-top: 1vh;
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.button-container button {
+    padding: 10px 20px; 
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e5f5ff; /* Light blue background */
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin: auto;
+            margin-top: 3vh;
+        }
+
+        /* Overlay text box */
+        .overlay {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            margin-right: -40px; /* Slight overlap */
+            z-index: 1;
+            position: relative;
+        }
+
+        .overlay h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .overlay p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        .overlay p:before {
+            content: "✔";
+            color: #2ca02c; /* Green check mark */
+            margin-right: 8px;
+        }
+
+        /* Image on the right */
+        .image-container {
+            width: 60%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+.contaner{
+    display: flex;
+    height: 20vh;
+    width: 200vh;
+    border: 1px solid #75D1BA;
+    background-color: #75D1BA;
+}
+.over{
+    display: flex;
+    text-align: center;
+    background-color: #F4FBF6;
+    border: 1px solid #F4FBF6;
+    height: 15vh;
+    width: 70VW;
+}
+.photo{
+    height: 100%;
+    min-height: 86px;
+    overflow: hidden;
+    position: relative;
+    width: 130px;
+    object-fit: contain;
+    margin-left: 7vh;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <div>
+                        <img src="https://www.taskrabbit.com/_next/static/media/taskrabbit-logo.c585babc.svg" height="120vh" width="120vw">
+                    </div>
+                </li>
+                <li class="ser"><b>Services</b></li>
+                <li class="cmn"><b>SignUp/Login</b></li>
+                <li class="cmn" id="x">
+                    <form action="button" >
+                        <input type="button" value="Become Tasker ">                                                        
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="line">_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</div>
+        <div class="ikea"><img src="https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=256&q=75&fm=webp" height="80vh" width="70vh"></div>
+        <div class="h1"><h1>Book trusted help <br> for home task</h1></div>
+        <div class="search-box">
+            <input type="text" placeholder="What do you need help with?" />
+            <button type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div class="nav">  
+            <div class="repair"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh8iyQ9jmmG4WLksWs4qi9dE_i1h0xfZozRRmKh0QjYc1ajxY0" height="30vh" width="30vh"></div>
+            <div class="drill"><img src="https://cdn-icons-png.flaticon.com/256/663/663463.png" height="30vh" width="30vh"></div>
+            <div class="truck"><img src="https://i.etsystatic.com/16037247/r/il/ea1954/5881569581/il_794xN.5881569581_jbll.jpg"  height="50vh" width="50vh"></div>
+            <div class="jadu"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThgEZ7s17Y3-BK3hxsFga5ycatPjvXLIwVnkv-Fu_Y-Jaepz-0" height="60vh" width="60vh"></div>
+            <div class="tree"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpgPMOlYnjaxsUna3Q6FrIwDSlDx5djHHsToF9IFgfD0RQbNQ_" height="50vh" width="50vh"></div>
+            <div class="thor"><img src="data:image/png;base64,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" height="50vh" width="50vh"></div>
+            <div class="bihari"><img src="https://static.vecteezy.com/system/resources/thumbnails/022/768/001/small/paint-roller-icon-vector.jpg" height="50vh" width="50vh"></div>
+            <div class="fire"><img src="data:image/jpeg;base64,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" height="50vh" width="50vh"></div>
+    </div>
+    <div class="flec">
+    <div class="nav" id="nav">Assembly</div>
+    <div class="bca">Mounting</div>
+    <div class="bcaa">Moving</div>
+    <div class="bcab">Cleaning</div>
+    <div class="bcab">Outdoor Help</div>
+    <div class="bcac">Home Repairs</div>
+    <div class="bcac">Painting</div>
+    <div class="bcad">Trending</div>
+    </div>
+    <div class="lina">______________________________________________________________________________________________________________________</div>
+    <div class="button-container">
+        <button class="rounded-button">General Furniture</button>
+        <button class="rounded-button">IKEA Assembly</button>
+        <button class="rounded-button">Crib Assembly</button>
+        <button class="rounded-button">PAX Assembly</button>
+        <button class="rounded-button">Bookshelf Assembly</button>
+        <button class="rounded-button">Desk Assembly</button>
+    </div>
+    <div class="container">
+        <div class="overlay">
+            <h2>Assembly</h2>
+            <p>Assemble or disassemble furniture items by unboxing, building, and any cleanup.</p>
+            <p>Now Trending: Curved sofas, computer desks, and sustainable materials.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.ctfassets.net/vwt5n1ljn95x/2zLfFEV2MrXbcska0MocE7/32575342bd9f30397d58ccb663c71744/Homepage_Assembly.png?w=1080&q=75&fm=webp" alt="Assembly">
+        </div>
+    </div>
+    <div class="over">
+        <div class="furni" style="font: bold; margin-left: 50vh;" >Furniture <br>Assemblies: <br>
+            <div class="mil" style="color: #0D7A5F;"><b>3.4 million+</b></div>
+        </div>
+    <div class="task" style="font: bold; margin-left: 7vh;" >Moving tasks: <br>
+    <div class="fv" style="color: #0D7A5F;"><b>1.5 million</b></div></div>
+    <div class="task" style="font: bold; margin-left: 7vh;" >Items Mounted: <br>
+        <div class="fv" style="color: #0D7A5F;"><b>1 million+</b></div></div>
+        <div class="task" style="font: bold; margin-left: 7vh;" >Home Repairs: <br>
+            <div class="fv" style="color: #0D7A5F;"><b>700,000+</b></div></div>
+            <div class="task" style="font: bold; margin-left: 7vh;" >Homes cleaned: <br>
+                <div class="fv" style="color: #0D7A5F;"><b>890,000+</b></div></div>
+                <div class="photo"><img alt="Ikea Endorsement Logo (To do)" loading="lazy" decoding="async" data-nimg="fill" sizes="128px" srcset="https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=16&amp;q=75&amp;fm=webp 16w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=32&amp;q=75&amp;fm=webp 32w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=48&amp;q=75&amp;fm=webp 48w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=64&amp;q=75&amp;fm=webp 64w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=96&amp;q=75&amp;fm=webp 96w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=128&amp;q=75&amp;fm=webp 128w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=256&amp;q=75&amp;fm=webp 256w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=384&amp;q=75&amp;fm=webp 384w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=640&amp;q=75&amp;fm=webp 640w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=750&amp;q=75&amp;fm=webp 750w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=828&amp;q=75&amp;fm=webp 828w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=1080&amp;q=75&amp;fm=webp 1080w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=1200&amp;q=75&amp;fm=webp 1200w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=1920&amp;q=75&amp;fm=webp 1920w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=2048&amp;q=75&amp;fm=webp 2048w, https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=3840&amp;q=75&amp;fm=webp 3840w" src="https://images.ctfassets.net/vwt5n1ljn95x/4DcDpxTyJZ2mQQi40pp4oQ/c5975f4d354af29127d0ed0265a448ea/Size_Default__Background_White__Language_en-US-CA__Logo_IKEA.png?w=3840&amp;q=75&amp;fm=webp" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: inherit; object-position: inherit; color: transparent;">
+                </div>
+    </div>
+    </div>
+</body>
+</html> 
